@@ -20,13 +20,13 @@
 ## Installation
 
 1.  **Clone the repository**:
-    `git clone https://github.com/your-username/ScriptedThoughts.git
-    cd ScriptedThoughts` 
+    `git clone https://github.com/your-username/ScriptedThoughts.git`
+    `cd ScriptedThoughts` 
     
 2.  **Install dependencies for both frontend and backend**:
-    `cd client
+    `cd backend
     npm install
-    cd ../server
+    cd ../frontend
     npm install` 
     
 3.  **Set up environment variables**:
@@ -44,20 +44,21 @@
     
     -   Start the backend server:
         
-        `cd server npm run dev` 
+        `cd backend npm run dev` 
         
     -   Start the frontend:
-        `cd client npm start` 
+        `cd frontend npm start` 
         
 6.  **Access the application**:
-    Visit `http://localhost:3000` to use the application.
+    Visit `http://localhost:5173` to use the application.
 
 ## API Endpoints
 
 -   **POST** `/api/v1/auth/signup` - Register a new user.
 -   **POST** `/api/v1/auth/signin` - Log in a user and receive a token.
 -   **POST** `/api/v1/blog/create` - Create a new blog post (requires token).
--   **PUT** `/api/v1/blog/update/:id` - Update an existing blog post (requires token).
+-   **POST** `/api/v1/blog/update` - Update an existing blog post (requires token).
+-   **POST** `/api/v1/blog/delete` - Delete an existing blog post (requires token).
 -   **GET** `/api/v1/blog/:id` - Get a specific blog post by ID.
 
 ## Usage
