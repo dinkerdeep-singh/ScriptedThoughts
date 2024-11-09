@@ -1,21 +1,20 @@
-import { Link, useNavigate } from "react-router-dom";
+import { Link } from "react-router-dom";
 
 export default function LandingPage() {
-  const navigate = useNavigate();
 
   return (
     <div className="bg-gray-50 min-h-screen flex-col items-center text-gray-900">
             {/* Header */}
-            <header className="w-full max-w-6xl flex justify-between items-center py-6 px-4">
+            <header className="w-full max-w-6xl flex items-center py-6 px-4">
                 <div className="text-2xl font-bold">Scripted Thoughts</div>
-                <nav className="flex items-center space-x-6">
+                <nav className="flex items-center space-x-9 ml-auto">
                     <Link to="/signin" className="hover:underline">Write</Link>
                     <Link to="/signin" className="hover:underline">Sign in</Link>
                     <Link to="/signup">
-                        <button onClick={() => console.log("click")} className="bg-black text-white px-4 py-2 rounded hover:bg-gray-800">
-                            Get started
-                        </button>
-                    </Link> 
+                    <button onClick={() => console.log("click")} className="bg-black text-white px-4 py-2 rounded hover:bg-gray-800">
+                        Get started
+                    </button>
+                    </Link>
                 </nav>
             </header>
             

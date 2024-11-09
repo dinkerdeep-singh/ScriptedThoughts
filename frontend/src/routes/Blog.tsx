@@ -75,9 +75,15 @@ export default function Blog() {
             </p>
           {/* Add more content if necessary */}
         </article>
-        <button onClick={() => deleteBlog()} className="bg-black text-white px-4 py-2 rounded hover:bg-red-900 mt-3">
-          Delete
-        </button>
+        <div className="flex flex-row gap-2">
+          <button onClick={() => deleteBlog()} className="bg-black text-white px-4 py-2 rounded hover:bg-red-900 mt-3">
+            Delete
+          </button>
+          <button onClick={() => navigate(`/blog/${blogId}/update-blog`)} className="bg-black text-white px-4 py-2 rounded hover:bg-red-900 mt-3">
+            Update
+          </button>
+        </div>
+        
       </div>
     </>
   );
